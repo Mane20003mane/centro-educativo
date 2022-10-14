@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{font-size: 1.25em;}
+
+.social-bar{
+    position: fixed;
+    right:0 ;
+    top: 35%;
+    font-size: 1.5rem;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+
+}
+.icon{
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+
+}
+.icon-facebook2{
+    background: #2E406E;
+
+}
+.icon-mail4{
+    background: #E83028;
+}
+.icon-whatsapp{
+    background: #1dbf38;
+}
+.icon:first-child{
+    border-radius: 1rem 0 0 0;
+}
+.icon:last-child{
+    border-radius: 0 0 0 1rem;
+}
+    .color-acento{
+        color:rgb(15, 44, 174);
+    }
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0,0,0.5);
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.5) ;
+    color: white;
+    background-color:rgb(15, 44, 174);
+}
+button:hover{
+    background-color:rgb(5, 20, 86);
+}
+
+header{
+    background-color: rgb(245,245, 245);
+}
+header .logo{
+    margin: 0%;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(15, 44, 174);
+    font-size: 2em;
+
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 1em;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: rgb(15, 44, 174);
+}
+#hero{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("media/IMG_20220909_083532.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+}
+
+
+#Somos-estan .container{
+    text-align: center;
+    padding: 200px 12px;
+    
+}
+#plan-estudio{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+#plan-estudio .container{
+    padding: 100px 12px;
+}
+#plan-estudio h2{
+    margin-top: 0;
+    font-size: 3.5em;
+}
+#plan-estudio p{
+    display: none;
+
+}
+#plan-estudio .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 20px;
+
+    
+}
+.carta:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("Media/IMG_20220909_091844.jpg"); 
+}
+
+.carta:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("Media/IMG_20220909_091844.jpg"); 
+}
+
+.carta:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("Media/530077_320932304671266_575103150_n.jpg");
+
+}
+
+#aplicar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+footer{
+    background-color: rgb(100, 100, 100);
+}
+footer p{
+    margin: 0%;
+    padding: 12px;
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+@media (min-width: 750px){
+    header{
+        position:fixed;
+        width: 100% ;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px ;
+    }
+    #Somos-estan .container{
+        display: flex;
+        justify-content: center;
+    }
+    #Somos-estan .texto{
+        width:60%;
+        text-align: initial;
+        padding: 0% 30px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #Somos-estan p{
+        text-align: justify;
+    }
+    #Somos-estan h2{
+        margin-top: 0;
+    }
+    #Somos-estan .img-container{
+        background-image: url("media/IMG_20220909_091844.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 400px;
+    }
+    #plan-estudio .programas{
+        display: flex;
+        justify-content: center;
+    }
+    #plan-estudio p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #plan-estudio h3{
+         margin-top: 0;
+
+    }
+    #plan-estudio .carta{
+        padding: 30px;
+        width: 400px;
+
+    }
+
+
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+.slider-frame {
+	width: 1280px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
